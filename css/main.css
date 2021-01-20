@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    height: 50px;
+} 
+
+.highlight {
+    background-color: gray;
+    border: mediumblue;
+    border-style: solid;
+}
+
+.img-div {
+    align-items: center;
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: max-content;
+  }
+
+#title {
+    text-align: center;
+    font: 40px bold;
+}
+
+#tribute-info {
+    background-color: white;
+    text-align: left;
+    font: 14px;
+}
+
+#footer {
+    background-color: chartreuse;
+    text-align: center;
+}
