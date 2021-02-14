@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+
+    <title>Sample Survey Page</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div id="main">
+
+        <div id="header"></div>
+        <div id="contactus" class="container-center">
+            <h1 id="title">Contact Us</h1>
+            <p id="description">Please complete the form below and we'll connect with you.</p>
+            <form id="survey-form">
+                <label id="name-label">Name</label>
+                <input id="name" type="text" required placeholder="Enter your name"> 
+                
+                <label id="email-label">eMail</label>
+                <input id="email" type="email" required placeholder="Enter your email address">
+                
+                <label id="number-label">Count</label>
+                <input id="number" type="number" required min="0" max="10" placeholder="How Many?">
+                
+                <label id="dropdown-label" for="interests">Interest</label>
+                <select id="dropdown" name="interests">
+                    <option value="none">Select your interest...</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">Javascript</option>
+                </select>
+                
+                <label for="contact">Contact Preference</label>
+                <input id="contact" type="radio" name="m-a-e" value="m">Morning
+                <input id="contact" type="radio" name="m-a-e" value="a">Afternoon
+                <input id="contact" type="radio" name="m-a-e" value="e">Evening
+                
+                
+                <label for="include">Website Needs</label>
+                <input id="include" type="checkbox" name="work" value="form">Forms
+                <input id="include" type="checkbox" name="work" value="text">Static Text
+                <input id="include" type="checkbox" name="work" value="content">Content Management
+                
+
+                <label id="contact-label">Comments</label>
+                <textarea></textarea>
+                
+                <input id="submit" type="submit" value="Submit"></input>
+            </form>
+        </div>
+      
+        <div id="footer">
+            footer here
+        </div>
+    </div>
+</body>
+</html>
