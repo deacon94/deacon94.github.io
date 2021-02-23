@@ -1,20 +1,29 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+html {
     margin: 0;
+    padding: 0;
 }
 
-#main {
-    display: flex;
-    flex-direction: column;
+body {
+    margin: 0;
+    background: gray;
+    padding: 3em;
+    font-family: 'Rubik',serif;
 }
 
 #header {
     height: 50px;
 } 
 
-.highlight {
-    background-color: gray;
-    border: mediumblue;
-    border-style: solid;
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 1.2em;
 }
 
 .img-div {
@@ -41,6 +50,46 @@ body {
     background-color: white;
     text-align: left;
     font: 14px;
+}
+
+.container-center {
+    padding: 2em;
+    background: white;
+    display: grid;
+    grid-template-columns: 70%;  
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    grid-area: label;
+    margin-bottom: .8em;
+    margin-top: .8em;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 90%;
+    padding: .5em;
+}
+
+select {
+    width: 90%;
+    padding: .5em;
+}
+
+textarea {
+    width: 90%;
+    padding: .5em;
+}
+
+input[type=submit] {
+    margin-top: .8em;
+    padding: .5em;
+    font-size: 1em;
+    background: navy;
+    border: 1px solid navy;
+    color:white;
+    cursor: pointer;
 }
 
 #footer {
